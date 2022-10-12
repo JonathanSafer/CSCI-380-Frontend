@@ -2,6 +2,10 @@
 Frontend for an accessibility focused messaging app
 
 
+* Justin Pile
+This class is exciting and I love food.
+
+
 
 ![](./_assets/1263746.jpeg) 
 
@@ -20,4 +24,5 @@ I'm a student at John Jay College. I like to play Frisbee.
 
 * Sonyl Nagale (Adjunct Lecturer)
 I am teaching this course!
+
 
