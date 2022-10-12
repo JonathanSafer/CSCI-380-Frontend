@@ -1,6 +1,9 @@
 # CSCI-380-Frontend
 Frontend for an accessibility focused messaging app
 
+My name is andy and this is my first app.
+
+
 
 * Justin Pile
 This class is exciting and I love food.
