@@ -5,8 +5,13 @@ My name is andy and this is my first app.
 
 
 
-* Justin Pile
-This class is exciting and I love food.
+
+
+![](./_assets/piazza.PNG)
+
+_Justin Pile_
+
+I am a student John Jay. I intrested in learning as much as I can from this class.
 
 
 
