@@ -25,3 +25,4 @@ I am a student at John Jay College. I like to play Frisbee.
 ## Taruna Singh
 Student at JJAY CUNY, I can type very fast!
 
+![](./_assets/IMG_1501.jpeg)
