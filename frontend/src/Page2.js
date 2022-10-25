@@ -1,3 +1,7 @@
-const Component = (props) => {
-    return <div>{props.content}</div>;
-  };
+import Component from "../Component";
+
+<Component>
+
+
+    
+</Component>
