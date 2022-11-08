@@ -4,6 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Component from "./Component";
 import User from "./User";
+import Home from "./Home";
 
 
 
