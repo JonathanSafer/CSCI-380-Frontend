@@ -1,7 +1,7 @@
-import Component from "../Component";
+import Component from "./Component";
 
 <Component>
 
 
-    
+
 </Component>
