@@ -1,0 +1,22 @@
+h1{
+    font: tahoma;
+    font-size: 20px;
+}
+
+.EnterNumber{
+    width: 100px;
+    margin: 0 auto;
+    vertical-align: 0 auto;
+    position: absolute;
+    left: 500px;
+    top: 300px;
+}
+
+.EnterButton{
+    width: 100px;
+    margin: 0 auto;
+    position: absolute;
+    left: 720px;
+    top: 310px;
+}
+
