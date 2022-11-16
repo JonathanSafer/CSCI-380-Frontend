@@ -12,7 +12,7 @@ function Page2(){
                 </div>
 
                 <div class= "EnterButton">
-                <button>Enter</button>
+                <Button>Enter</Button>
                 </div>
         </section>
     );
