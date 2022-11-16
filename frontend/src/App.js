@@ -2,7 +2,7 @@ import { Routes, Route} from "react-router-dom";
 //import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Component from "./Component";
+import Page2 from "./Page2"
 import User from "./User";
 import Home from "./Home";
 import Page4 from "./Page4";
@@ -14,7 +14,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" index element={<>Hi </>}/>
-        <Route path="/Page2" element={<Component />} />
+        <Route path= '/page2' element={<Page2/>}></Route>
         <Route path="/Home" element={<Home/>}/>
         <Route path='/User' element={<User/>}/> 
         <Route path='/page4' element={<Page4/>}/> 
