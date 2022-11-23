@@ -55,8 +55,8 @@ function Page2(){
     };
 
     return(
-        <section>
-                <div class="EnterNumber">
+        <section className= "Style">
+                <div className="EnterNumber">
                         <h1>Page 2</h1>
                         <input id="phoneNumber" type="text" maxlength = '10' placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
                 <small>Possible error</small>       

@@ -1,7 +1,12 @@
+.Style{
+    background-color: #edc7b7;
+}
+
 h1{
     font: tahoma;
     font-size: 20px;
 }
+
 
 .EnterNumber{
     width: 100px;
@@ -10,7 +15,7 @@ h1{
     position: absolute;
     left: 500px;
     top: 300px;
-    content: '+'
+   
 }
 
 
