@@ -6,15 +6,23 @@ function Page2(){
     const [data, setData] = useState();
     const [isLoading, setIsLoading] = useState(false);
     const [err, setErr] = useState('');
+    const [visible, setVisibility] = useState();
 
-    const handleClick = async () => {
+    const HandleClick = async () => {
         setIsLoading(true);
         try {
-          const response = await fetch('https://reqres.in/api/users', {
+            const rawNum = document.getElementById("phoneNumber").value;
+            const phoneNumber = parseInt(rawNum);
+            if(!Number.isInteger(phoneNumber)){
+                console.log(`ERROR: ${rawNum} is not a valid phone number`);
+                return
+            }
+            
+            //send POST request for text to be sent to phone number
+            const response = await fetch('https://reqres.in/api/users', {
                 method: 'POST',
                 body: JSON.stringify({
-                    name: 'John Smith',
-                    job: 'manager',
+                    number: phoneNumber,
                 }),
                 headers: {
                     'Content-Type': 'application/json',
@@ -38,23 +46,30 @@ function Page2(){
         }
     };
 
+    const CheckNumber = async () => {
+        if(document.getElementById("phoneNumber").value.length >= 10){
+            setVisibility(true);
+        } else {
+            setVisibility(false);
+        }
+    };
+
     return(
         <section>
                 <div class="EnterNumber">
                         <h1>Page 2</h1>
-                        <input type="text" placeholder="Enter your phone number..."></input>
+                        <input type="text" id="phoneNumber" placeholder="Enter your phone number..." onChange={() => CheckNumber()}></input>
                              
                 </div>
 
-                <div class= "EnterButton">
-                <button onClick={() => handleClick()}>Enter</button>
+                <div className= "EnterButton">
+                <button style={{ visibility: visible ? 'visible' : 'hidden'}} onClick={() => HandleClick()}>Enter</button>
                 </div>
                 {isLoading && <h2>Loading...</h2>}
                 {err && <h2>{err}</h2>}
                 {data && (
                     <div>
-                        <h2>Name: {data.name}</h2>
-                        <h2>Job: {data.job}</h2>
+                        <h2>Phone Number: {data.number}</h2>
                     </div>
                 )}
         </section>
