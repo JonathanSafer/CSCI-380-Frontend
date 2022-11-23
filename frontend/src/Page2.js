@@ -7,11 +7,10 @@ function Page2(){
         <section>
                 <div class="EnterNumber">
                         <h1>Page 2</h1>
-                        <input type="text" placeholder="Enter your phone number..."></input>
-                             
-                </div>
-
-                <div class= "EnterButton">
+                        <input type="text" maxlength = '10' placeholder="Enter number..." required></input>
+                <small>Possible error</small>       
+                </div>       
+                <div>
                 <button>Enter</button>
                 </div>
         </section>
