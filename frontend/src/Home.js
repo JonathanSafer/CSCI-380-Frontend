@@ -1,4 +1,4 @@
-import React from 'react';;
+/*import React from 'react';;
 import styled from 'styled-components';
 
 const theme={
@@ -39,7 +39,7 @@ export default function App(){
         </div>
     );
     
-}
+}*/
    
 
         
