@@ -58,11 +58,10 @@ function Page2(){
         <section>
                 <div class="EnterNumber">
                         <h1>Page 2</h1>
-                        <input type="text" id="phoneNumber" placeholder="Enter your phone number..." onChange={() => CheckNumber()}></input>
-                             
-                </div>
-
-                <div className= "EnterButton">
+                        <input id="phoneNumber" type="text" maxlength = '10' placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
+                <small>Possible error</small>       
+                </div>       
+                <div>
                 <button style={{ visibility: visible ? 'visible' : 'hidden'}} onClick={() => HandleClick()}>Enter</button>
                 </div>
                 {isLoading && <h2>Loading...</h2>}
