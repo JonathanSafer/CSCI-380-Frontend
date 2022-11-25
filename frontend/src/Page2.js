@@ -7,6 +7,7 @@ function Page2(){
     const [isLoading, setIsLoading] = useState(false);
     const [err, setErr] = useState('');
     const [visible, setVisibility] = useState();
+    const [error1, setError1] = useState();
 
     const HandleClick = async () => {
         setIsLoading(true);
@@ -47,19 +48,23 @@ function Page2(){
     };
 
     const CheckNumber = async () => {
-        if(document.getElementById("phoneNumber").value.length >= 10){
+        let value = document.getElementById("phoneNumber").value
+        let pattern = /^\d+$/;
+        let isNum = !value.length || pattern.test(value);
+        if(isNum && document.getElementById("phoneNumber").value.length >= 10){
             setVisibility(true);
         } else {
             setVisibility(false);
         }
+        setError1(!isNum);
     };
 
     return(
         <section>
-                <div class="EnterNumber">
+                <div className="EnterNumber">
                         <h1>Page 2</h1>
-                        <input id="phoneNumber" type="text" maxlength = '10' placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
-                <small>Possible error</small>       
+                        <input id="phoneNumber" type="text" maxLength = {10} placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
+                <small id="err" style={{ visibility: error1 ? 'visible' : 'hidden'}}>Phone number may only contain numbers</small>       
                 </div>       
                 <div>
                 <button style={{ visibility: visible ? 'visible' : 'hidden'}} onClick={() => HandleClick()}>Enter</button>
