@@ -58,7 +58,7 @@ function Page2(){
         <section className= "Style">
                 <div className="EnterNumber">
                         <h1>Page 2</h1>
-                        <input id="phoneNumber" type="text" maxlength = '10' placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
+                        <input id="phoneNumber" type='text'pattern="\d{1,5}"  placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
                 <small>Possible error</small>       
                 </div>       
                 <div>
