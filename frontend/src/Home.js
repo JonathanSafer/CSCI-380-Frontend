@@ -20,6 +20,8 @@ function Home(){
                 <div class="Home">
                     <h1> Homepage</h1>
                     <button onClick={handleClick}>Click Me!</button>
+                    {/*Link to Page2*/}
+                    <Link to="/Page2"><button className="button"> </button></Link>
                 </div>
             </section>
           </div>
