@@ -21,7 +21,7 @@ function Page4(){
     }
     return(
         <section>
-                <div class="container-fluid">
+                <div className="container-fluid">
                         <h1 className="mt-5">Page 4</h1>
                         <input type="text" placeholder="Search Contact..."></input>
 
