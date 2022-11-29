@@ -17,6 +17,7 @@ button {
 .button:hover{
     background-color:#f44336;
     color:white;
+}
 .orate-logo{
     position: relative;
     right: 100px;

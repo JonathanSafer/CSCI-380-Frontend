@@ -8,19 +8,21 @@ function Home(){
         console.log('hello');
     }
     return(
-        <section className = "orate-logo">
-            <div>
-                <img src = {gif} alt = "Logo" />
-            </div>
+        <div>
+            <section className = "orate-logo">
+                <div>
+                    <img src = {gif} alt = "Logo" />
+                </div>
 
-     
-          </section>
-          <section>
-              <div class="Home">
-                  <h1> Homepage</h1>
-                  <button onClick={handleClick}>Click Me!</button>
-              </div>
-          </section>
+        
+            </section>
+            <section>
+                <div class="Home">
+                    <h1> Homepage</h1>
+                    <button onClick={handleClick}>Click Me!</button>
+                </div>
+            </section>
+          </div>
 
           //Need help trying to get the submit bar on here
     )
