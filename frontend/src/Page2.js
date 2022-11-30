@@ -62,13 +62,10 @@ function Page2(){
     return(
         <section className= "Style">
                 <div className="EnterNumber">
-                        <h1>Page 2</h1>
                         <input id="phoneNumber" type='text' maxLength={10}  placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
-                        <small id="err" style={{ visibility: error1 ? 'visible' : 'hidden'}}>Phone number may only contain numbers</small>    
+                        <button style={{ visibility: visible ? 'visible' : 'hidden'}} onClick={() => HandleClick()}>Enter</button>
+                        <h2 id="err" style={{ visibility: error1 ? 'visible' : 'hidden'}}>Phone number may only contain numbers</h2>  
                 </div>       
-                <div>
-                <button style={{ visibility: visible ? 'visible' : 'hidden'}} onClick={() => HandleClick()}>Enter</button>
-                </div>
                 {isLoading && <h2>Loading...</h2>}
                 {err && <h2>{err}</h2>}
                 {data && (

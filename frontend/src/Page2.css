@@ -10,11 +10,11 @@ h1{
 
 
 .EnterNumber{
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
     vertical-align: 0 auto;
     position: absolute;
-    left: 500px;
+    left: 10%;
     top: 300px;
    
 }
@@ -33,8 +33,7 @@ button {
     cursor: pointer;
     margin: 36px;
     box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
-    left: 730px;
-    top: 310px;
+    display:inline-block;
 
   }
   
@@ -64,4 +63,15 @@ button {
     right: 10px;
   }
 
-
+  input{
+    background-color: white;
+    padding: 10;
+    border-bottom-color:'#000';
+    margin:5;
+    padding: 10px 20px;
+    margin-right:50;
+    border-bottom-width: 2;
+    border: 0px;
+    width: 70%;
+    font-size: 500%;
+}
