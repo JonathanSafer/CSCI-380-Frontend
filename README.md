@@ -31,3 +31,7 @@ I am a student at John Jay College. I like to play Frisbee.
 Student at JJAY CUNY, I can type very fast!
 
 ![](./_assets/cartoonme.jpeg)
+
+_Jillian Golden (student)_
+I'm a senior at John Jay and I like to play LOL!
+![](./_assets/JGpic.jpeg)
