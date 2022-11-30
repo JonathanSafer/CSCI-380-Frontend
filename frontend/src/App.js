@@ -1,7 +1,6 @@
 import { Routes, Route} from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import gif from "./Orate.gif"
 import Page2 from "./Page2"
 import User from "./User";
 import Home from "./Home";
