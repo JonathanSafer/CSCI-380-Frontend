@@ -1,4 +1,15 @@
 .Submit{
-    top: 100px;
-    left: 500px;
+    position: relative;
+    top: 245px;
+    left: 840px;
 }
+
+.verification{
+    height: 50px;
+    position: relative;
+    top: 300px;
+    background-color: #eee2dc ;
+    border-color: #123c69;
+    
+}
+
