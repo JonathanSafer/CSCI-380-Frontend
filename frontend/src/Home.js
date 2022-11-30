@@ -10,9 +10,11 @@ return(
             <img src = {gif} alt = "Logo" />
             
         </div>
+
+
         <div className="home">
-            <h1> Homepage</h1>
-            <Link to="/page2"><button> click me!</button></Link>
+           <h1>Homepage</h1>
+            <Link to="/page2"><button>click me!</button></Link>
         </div>
      
         </section>
