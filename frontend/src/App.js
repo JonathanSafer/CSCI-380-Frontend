@@ -16,19 +16,15 @@ return (
     
 
       <Routes>
-        <Route path="/" index element={<>Hi </>}/>
-        <Route path= '/page2' element={<Page2/>}/>
-        <Route path="/Home" element={<Home/>}/>
-        <Route path='/User' element={<User/>}/> 
-        <Route path='/page3' element={<Page3/>}/>
-        <Route path='/page4' element={<Page4/>}/> 
-      </Routes>
-      
-    
-</>
+        <Route path='/' index element ={<Home/>} />
+        <Route path='/page2' element={<Page2 />} />
+        <Route path='/page3' element ={<Page3 />} />
+        <Route path='/User' element={<User />} />
+        <Route path='/page4' element={<Page4 />} />
+    </Routes>
+      </>
 
    
 )
 }
-
 export default App;
