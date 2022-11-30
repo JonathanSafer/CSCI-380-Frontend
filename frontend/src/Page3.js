@@ -1,3 +1,6 @@
+import React from "react";
+import "./page3.css";
+
 function Page3(){
 //fetch('http://localhost:3000/page3',{ 
   //  method: 'POST',
@@ -8,13 +11,12 @@ function Page3(){
 //}
 return(
     <div>
-        <input type="text" id='Verification' maxLength="4"></input>
-        <button type="button">Submit</button>
-        <button onClick="clickfunc"></button>
+        <center><input className= 'verification'type="text" id='Verification' maxLength="4" placeholder="Verification"></input></center>
+        <button onClick="clickFunc()" className= 'Submit' type="button">Submit</button>
     </div>
 
 )
-function clickfunc (){
+function clickFunc(){
 
 var inputValue= document.getElementById('Verification').value; 
 console.log(inputValue);
