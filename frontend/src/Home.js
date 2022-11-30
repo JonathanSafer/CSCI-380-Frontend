@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import gif from "./Orate.gif"
+import {Link } from "react-router-dom";
 
 function Home(){
 return(
