@@ -1,3 +1,4 @@
+<center></center>
 import React from "react";
 import "./page5.css";
 
