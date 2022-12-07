@@ -31,3 +31,7 @@ I am a student at John Jay College. I like to play Frisbee.
 Student at JJAY CUNY, I can type very fast!
 
 ![](./_assets/cartoonme.jpeg)
+
+## Andy Figueroa
+I am a JJAY student and this is my first app. 
+![](./_assets/BC32BDE1-346A-4B43-BBCC-D2390B5AB1B7_1_105_c.jpeg)
