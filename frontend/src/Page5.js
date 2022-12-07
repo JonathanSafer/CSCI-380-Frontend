@@ -5,7 +5,7 @@ function Page5(){
     return(
         <section>
                 <div class="container-fluid">
-                        <h1 class="mt-5">Page 4</h1>
+                        <h1 class="mt-5">Page 5</h1>
                         <input type="text" placeholder="Search Contact..."></input>
 
                         {/* all of these buttons should direct to the phone book page */}
@@ -17,6 +17,7 @@ function Page5(){
 
 
     );
+
     
 }
 export default Page5;
