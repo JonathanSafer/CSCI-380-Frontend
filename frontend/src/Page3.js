@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 import "./Page2.css";
 
-function Page2(){
+function Page3(){
 
     const [data, setData] = useState();
     const [isLoading, setIsLoading] = useState(false);
     const [err, setErr] = useState('');
     const [visible, setVisibility] = useState();
     const [error1, setError1] = useState();
-    const phoneNumberLength = 10;
+    const codeLength = 6;
 
     const HandleClick = async () => {
         setIsLoading(true);
@@ -52,7 +52,7 @@ function Page2(){
         let value = document.getElementById("phoneNumber").value
         let pattern = /^\d+$/;
         let isNum = !value.length || pattern.test(value);
-        if(isNum && document.getElementById("phoneNumber").value.length >= phoneNumberLength){
+        if(isNum && document.getElementById("phoneNumber").value.length >= codeLength){
             setVisibility(true);
         } else {
             setVisibility(false);
@@ -63,9 +63,9 @@ function Page2(){
     return(
         <section className= "Style">
                 <div className="EnterNumber">
-                        <input id="phoneNumber" type='text' maxLength={phoneNumberLength}  placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
+                        <input id="phoneNumber" type='text' maxLength={codeLength}  placeholder="Enter number..." required onChange={() => CheckNumber()}></input>
                         <button style={{ visibility: visible ? 'visible' : 'hidden'}} onClick={() => HandleClick()}>Enter</button>
-                        <h2 id="err" style={{ visibility: error1 ? 'visible' : 'hidden'}}>Phone number may only contain numbers</h2>  
+                        <h2 id="err" style={{ visibility: error1 ? 'visible' : 'hidden'}}>Your verification code will only contain numbers</h2>  
                 </div>       
                 {isLoading && <h2>Loading...</h2>}
                 {err && <h2>{err}</h2>}
@@ -78,4 +78,4 @@ function Page2(){
     );
 }
 
-export default Page2;
+export default Page3;
