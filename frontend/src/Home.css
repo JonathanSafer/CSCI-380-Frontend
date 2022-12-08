@@ -1,4 +1,4 @@
-.button{
+.button1{
     background-color: #f4511e;
     border: none;
     color: white;
@@ -15,7 +15,7 @@
     border: 2px solid #4CAF50;
     border-radius: 50%;
 }
-.button:hover {opacity: 1}
+.button1:hover {opacity: 1}
 
 .orate-logo{
     position: relative;
