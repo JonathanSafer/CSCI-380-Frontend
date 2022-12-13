@@ -11,12 +11,12 @@ return(
             
         </div>
 
-
-        <div className="button1">
+        <div className="home">
            <h1>Homepage</h1>
           <center><Link to="/page2"><button>click me!</button></Link></center>
         </div>
      
+    
         </section>
 
         //Need help trying to get the submit bar on here
