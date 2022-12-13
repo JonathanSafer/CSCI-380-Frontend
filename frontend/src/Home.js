@@ -14,7 +14,7 @@ return(
 
         <div className="button1">
            <h1>Homepage</h1>
-            <Link to="/page2"><button1>click me!</button1></Link>
+          <center><Link to="/page2"><button>click me!</button></Link></center>
         </div>
      
         </section>
