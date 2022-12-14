@@ -71,7 +71,7 @@ function Page3(){
                 {err && <h2>{err}</h2>}
                 {data && (
                     <div>
-                        <h2>Phone Number: {data.number}</h2>
+                        <h2>Received: {data.number}</h2>
                     </div>
                 )}
         </section>

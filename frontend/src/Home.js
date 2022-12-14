@@ -12,10 +12,9 @@ return(
         </div>
 
 
-        <div className="home">
-           <h1>Homepage</h1>
-            <Link to="/page2"><button>click me!</button></Link>
-        </div>
+        <Link to="/page2"><div className="button1">
+            CLICK ME!
+        </div></Link>
      
         </section>
 
