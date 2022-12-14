@@ -2,13 +2,13 @@
     background-color: #ac3b61;
     border: none;
     color: #123c69;
-    padding: 160px 320px;
+    padding: 200% 500%;
     text-align: center;
-    font-size: 150px;
+    font-size: 200%;
     margin: auto;
     opacity: .6;
     transition: 0.3s;
-    display: inline-block;
+    display: inline-flex;
     text-decoration: none;
     cursor: pointer;
     width:100;

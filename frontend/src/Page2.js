@@ -14,21 +14,25 @@ function Page2(){
         setIsLoading(true);
         try {
             const rawNum = document.getElementById("phoneNumber").value;
-            const phoneNumber = parseInt(rawNum);
+            let phoneNumber = parseInt(rawNum);
             if(!Number.isInteger(phoneNumber)){
                 console.log(`ERROR: ${rawNum} is not a valid phone number`);
                 return
             }
+            phoneNumber = "+1" + phoneNumber.toString()
             
             //send POST request for text to be sent to phone number
-            const response = await fetch('https://reqres.in/api/users', {
+            const response = await fetch('http://message-app-v5.us-west-2.elasticbeanstalk.com/send', {
                 method: 'POST',
                 body: JSON.stringify({
-                    number: phoneNumber,
+                    phone: phoneNumber,
+                    message: "hello my name is",
+                    name: "Damian"
                 }),
                 headers: {
                     'Content-Type': 'application/json',
-                    Accept: 'application/json',
+                    "Accept": 'application/json',
+                    "X-POST-380": "sonyl"
                 },
             });
     
@@ -71,7 +75,7 @@ function Page2(){
                 {err && <h2>{err}</h2>}
                 {data && (
                     <div>
-                        <h2>Phone Number: {data.number}</h2>
+                        <h2>Phone Number: {data.message}</h2>
                     </div>
                 )}
         </section>
