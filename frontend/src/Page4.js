@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Link } from "react-router-dom";
 import "./Page4.css";
 
@@ -15,23 +15,22 @@ import "./Page4.css";
 // }
 
 function Page4(){
-    const [clicks, setClicks] = useState(0);
-    const increment = () => {
-        setClicks(clicks + 1);
-    }
     return(
         <section>
-                <div className="container-fluid">
-                        <h1 className="mt-5">Page 4</h1>
+                <div class="container-fluid">
+                        
                         <input type="text" placeholder="Search Contact..."></input>
-
+                        
+                       </div> 
+                <div class="buttons">
                         {/* all of these buttons should direct to the phone book page */}
-                        <Link to="/page5?req=call"><button className="button1">Call</button></Link>
-                        <Link to="/page5?req=video"><button type="button">Video Call</button></Link>
-                        <Link to="/page5?req=message"><button onClick={() => increment()} type="button">Message</button></Link>
-                        {/*<h1 className="mt-5">{clicks}</h1>*/}
+                        <button type="button">Call</button>
+                        <button type="button">Video Call</button>
+                        <button type="button">Message</button>
                 </div>
         </section>
+
+
     );
 }
 export default Page4;
