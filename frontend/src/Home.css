@@ -13,9 +13,11 @@
     cursor: pointer;
     width:100;
     border: 2px solid #4CAF50;
-    border-radius: 50%;
+    border-radius: 70%;
     position: absolute;
     left: 500px;
+    box-shadow: 0 0 2px darkslategray;
+    transform: translateY(2px);
 }
 .button1:hover {opacity: 1}
 
