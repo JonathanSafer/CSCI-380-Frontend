@@ -22,7 +22,7 @@ function Page2(){
             phoneNumber = "+1" + phoneNumber.toString()
             
             //send POST request for text to be sent to phone number
-            const response = await fetch('http://message-app-v5.us-west-2.elasticbeanstalk.com/send', {
+            const response = await fetch('http://node-express-env.eba-ma23kuxx.us-west-2.elasticbeanstalk.com/send', {
                 method: 'POST',
                 body: JSON.stringify({
                     phone: phoneNumber,
